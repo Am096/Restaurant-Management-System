@@ -1,0 +1,47 @@
+{% extends 'adminbase.html' %}
+
+{%  block title %}
+add dish
+{% endblock %}
+
+
+
+{% block content %}
+<!-- Reservation Section -->
+<!-- Reservation Section -->
+<section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay"
+    style="background-image: url(static/img/reservation-bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="section-content bg-white p-5 shadow">
+                    <div class="heading-section text-center">
+
+                        <h2>
+                            Add New Dish
+                        </h2>
+                    </div>
+                    <form class="form-group" method="post" name="contact-us">
+                        <!-- action="" -->
+                        {{  form.hidden_tag() }}
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                {{  form.dishname(class="form-control", placeholder="dish name")  }}
+                            </div>
+                            <div class="col-md-12 form-group">
+                                {{  form.dishprice(class="form-control", placeholder="dish price")  }}
+                            </div>
+                            <div class="col-md-12 text-center">
+                                {{ form.submit(class="btn btn-primary btn-shadow btn-lg")   }}
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{%  endblock %}

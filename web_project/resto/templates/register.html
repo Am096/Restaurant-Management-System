@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            register page
+        </title>
+    </head>
+
+    <body>
+        <h1 align="center">
+
+            PLEASE CREATE YOUR ACCOUNT
+
+        </h1>
+
+        <div>
+            <div align="center" class="container">
+                <table>
+                    <form method="POST" class="form-register" style="color:rgb(143, 53, 53)">
+                        <tr>
+                            <td>
+                                {{  form.username.label() }}
+                            </td>
+
+                            <td>
+                                {{  form.username(class="form-control", placeholder="user name")  }}
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>
+                                {{  form.password.label() }}
+                            </td>
+
+                            <td>
+                                {{  form.password(class="form-control", placeholder="password")  }}
+                            </td>
+                        </tr>
+
+
+                        <tr>
+
+                        </tr>
+                        <tr>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                {{ form.submit(class="btn btn-lg btn-primary")   }}
+                            </td>
+                        </tr>
+
+
+
+
+
+
+                    </form>
+                </table>
+
+            </div>
+
+
+        </div>
+    </body>
+
+</html>
